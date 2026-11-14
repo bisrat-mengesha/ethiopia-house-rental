@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Listings - House Rental Management System</title>
+</head>
+<body>
+
+<h1>House Rental Management System (Ethiopia)</h1>
+<p>Logged in as: <b>House Owner</b> | <a href="signin.html">Sign Out</a></p>
+
+<p>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="manage-listings.html">Manage Listings</a> |
+  <a href="rental-requests.html">Rental Requests</a> |
+  <a href="my-tenants.html">My Tenants</a> |
+  <a href="report-user.html">Report User</a> |
+  <a href="view-agreement.html">View Agreement</a> |
+  <a href="faq-terms.html">FAQ and Terms</a> |
+  <a href="contact-us.html">Contact Us</a>
+</p>
+<hr>
+
+<h2>Manage Listings</h2>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>ID</th><th>Title</th><th>Location</th><th>Price (ETB)</th><th>Status</th><th>Actions</th>
+  </tr>
+  <tr>
+    <td>H-001</td><td>2 bedroom house</td><td>Jimma, Hermata</td><td>6,000</td><td>Verified</td>
+    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+  </tr>
+  <tr>
+    <td>H-002</td><td>Studio apartment</td><td>Jimma, Bosa Addis</td><td>3,500</td><td>Pending</td>
+    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+  </tr>
+  <tr>
+    <td>H-003</td><td>3 bedroom villa</td><td>Addis Ababa, Bole</td><td>18,000</td><td>Rented</td>
+    <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+  </tr>
+</table>
+
+<h3>Add New Listing</h3>
+<form action="#" method="post">
+  <p>
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required>
+  </p>
+  <p>
+    <label for="location">Location:</label><br>
+    <input type="text" id="location" name="location" required>
+  </p>
+  <p>
+    <label for="price">Monthly price (ETB):</label><br>
+    <input type="number" id="price" name="price" min="0" required>
+  </p>
+  <p>
+    <label for="bedrooms">Bedrooms:</label><br>
+    <input type="number" id="bedrooms" name="bedrooms" min="0">
+  </p>
+  <p>
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="4" cols="40"></textarea>
+  </p>
+  <p>
+    <label for="photos">Photos:</label><br>
+    <input type="file" id="photos" name="photos" accept="image/*" multiple>
+  </p>
+  <p>
+    <button type="submit">Save listing</button>
+    <button type="reset">Clear</button>
+  </p>
+</form>
+
+<hr>
+<p>
+  <a href="view-agreement.html">View Agreement</a> |
+  <a href="faq-terms.html">Read FAQ and Terms</a> |
+  <a href="contact-us.html">Contact Us</a>
+</p>
+
+</body>
+</html>

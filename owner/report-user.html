@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report User - House Rental Management System</title>
+</head>
+<body>
+
+<h1>House Rental Management System (Ethiopia)</h1>
+<p>Logged in as: <b>House Owner</b> | <a href="signin.html">Sign Out</a></p>
+
+<p>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="manage-listings.html">Manage Listings</a> |
+  <a href="rental-requests.html">Rental Requests</a> |
+  <a href="my-tenants.html">My Tenants</a> |
+  <a href="report-user.html">Report User</a> |
+  <a href="view-agreement.html">View Agreement</a> |
+  <a href="faq-terms.html">FAQ and Terms</a> |
+  <a href="contact-us.html">Contact Us</a>
+</p>
+<hr>
+
+<h2>Report User</h2>
+
+<form action="#" method="post">
+  <p>
+    <label for="tenant">Select user:</label><br>
+    <select id="tenant" name="tenant" required>
+      <option value="">Choose a tenant</option>
+      <option value="dawit">Dawit Alemu</option>
+      <option value="hana">Hana Girma</option>
+    </select>
+  </p>
+  <p>
+    <label for="reason">Reason:</label><br>
+    <select id="reason" name="reason" required>
+      <option value="late-payment">Late payment</option>
+      <option value="damage">Property damage</option>
+      <option value="other">Other</option>
+    </select>
+  </p>
+  <p>
+    <label for="details">Description:</label><br>
+    <textarea id="details" name="details" rows="5" cols="40" required></textarea>
+  </p>
+  <p>
+    <button type="submit">Submit report</button>
+  </p>
+</form>
+
+<hr>
+<p>
+  <a href="view-agreement.html">View Agreement</a> |
+  <a href="faq-terms.html">Read FAQ and Terms</a> |
+  <a href="contact-us.html">Contact Us</a>
+</p>
+
+</body>
+</html>
