@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Registration - Ethiopia House Rental</title>
+</head>
+<body>
+    <header>
+        <h1>Ethiopia House Rental</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="signin.html">Sign in</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <p><a href="register.html">&larr; Back to account selection</a></p>
+
+        <h2>Register as a House Owner or Real Estate Organization</h2>
+        <p>
+            For individual landlords, family property owners, property
+            management agencies, and real estate developers.
+        </p>
+
+        <form>
+            <fieldset>
+                <legend>Owner Category</legend>
+                <p>Select the category that best describes you:</p>
+
+                <p>
+                    <label>
+                        <input type="radio" name="owner_type" value="individual" checked>
+                        <strong>Individual Homeowner</strong> — Single private property owner
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="owner_type" value="group">
+                        <strong>Family or Joint Owners</strong> — Shared or family property
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="owner_type" value="company">
+                        <strong>Organization or Real Estate Agency</strong> — Registered business
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Owner or Organization Information</legend>
+
+                <p>
+                    <label>
+                        Full name or organization name:
+                        <input type="text" name="owner_name" required
+                               placeholder="Your name or organization name">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Authorized representative or manager:
+                        <input type="text" name="rep_name"
+                               placeholder="Primary contact person's name">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Identification document type:
+                        <select name="id_type" required>
+                            <option value="fayda">National ID (Fayda)</option>
+                            <option value="passport">Passport</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        National ID or passport number:
+                        <input type="text" name="owner_id" required
+                               placeholder="Enter your ID or passport number">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Upload an ID or passport image or PDF:
+                        <input type="file" name="owner_id_photo"
+                               accept="image/*,.pdf" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Commercial license or registration number:
+                        <input type="text" name="trade_license"
+                               placeholder="For organizations">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Taxpayer Identification Number (TIN):
+                        <input type="text" name="tin_number"
+                               placeholder="Optional for individuals">
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <p>
+                    <label>
+                        Phone number:
+                        <input type="tel" name="phone" required
+                               pattern="^(\+251|0)[79][0-9]{8}$"
+                               placeholder="+251911223344 or 0911223344"
+                               title="Enter an Ethiopian mobile number starting with +251 or 0">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Alternative phone number:
+                        <input type="tel" name="alt_phone"
+                               pattern="^(\+251|0)[79][0-9]{8}$"
+                               placeholder="+251911223344">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Email address:
+                        <input type="email" name="email" required
+                               placeholder="contact@example.com">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        City or regional state:
+                        <select name="city">
+                            <option>Addis Ababa</option>
+                            <option>Dire Dawa</option>
+                            <option>Oromia</option>
+                            <option>Amhara</option>
+                            <option>Sidama</option>
+                            <option>Tigray</option>
+                            <option>Somali</option>
+                            <option>South Ethiopia</option>
+                            <option>Central Ethiopia</option>
+                            <option>Southwest Ethiopia</option>
+                            <option>Harari</option>
+                            <option>Afar</option>
+                            <option>Benishangul-Gumuz</option>
+                            <option>Gambella</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Security</legend>
+
+                <p>
+                    <label>
+                        Password (at least 6 characters):
+                        <input type="password" name="password" minlength="6" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Confirm password:
+                        <input type="password" name="password_confirm"
+                               minlength="6" required>
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the <a href="term-use.html">terms of use</a>
+                    and confirm that the property and ownership documents I
+                    submit are genuine and authorized.
+                </label>
+            </p>
+
+            <p><button type="submit">Complete Owner Registration</button></p>
+        </form>
+
+        <p>
+            Looking to rent a house?
+            <a href="tenant-registration.html">Register as a tenant</a>.
+        </p>
+
+        <p>
+            Already have an account?
+            <a href="signin.html">Sign in</a>.
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            &copy; 2026 Ethiopia House Rental |
+            <a href="contact-us.html">Contact us</a> |
+            <a href="owner/faq-terms.html">FAQ and Terms</a>
+        </p>
+    </footer>
+</body>
+</html>

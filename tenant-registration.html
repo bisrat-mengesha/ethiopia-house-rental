@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Registration - Ethiopia House Rental</title>
+</head>
+<body>
+    <header>
+        <h1>Ethiopia House Rental</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="signin.html">Sign in</a> |
+            <a href="owner-registration.html">Owner Registration</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <p><a href="register.html">&larr; Back to account selection</a></p>
+
+        <h2>Register as a Tenant</h2>
+        <p>
+            Create an account to contact landlords and arrange house viewings
+            across Ethiopia.
+        </p>
+
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <p>
+                    <label>
+                        Full legal name:
+                        <input type="text" name="fullname" required
+                               placeholder="Abebe Kebede">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Phone number:
+                        <input type="tel" name="phone" required
+                               pattern="^(\+251|0)[79][0-9]{8}$"
+                               placeholder="+251911223344 or 0911223344"
+                               title="Enter an Ethiopian mobile number starting with +251 or 0">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Email address:
+                        <input type="email" name="email" required
+                               placeholder="abebe@example.com">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Identification document type:
+                        <select name="id_type" required>
+                            <option value="fayda">National ID (Fayda)</option>
+                            <option value="passport">Passport</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        National ID or passport number:
+                        <input type="text" name="id_number" required
+                               placeholder="Enter your ID or passport number">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Upload an ID or passport image or PDF:
+                        <input type="file" name="id_photo" accept="image/*,.pdf" required>
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Emergency Contact and Guarantor</legend>
+
+                <p>
+                    <label>
+                        Guarantor or contact full name:
+                        <input type="text" name="guarantor_name"
+                               placeholder="Full name of family member or guarantor">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Guarantor phone number:
+                        <input type="tel" name="guarantor_phone"
+                               pattern="^(\+251|0)[79][0-9]{8}$"
+                               placeholder="+251922334455">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Relationship:
+                        <select name="relationship">
+                            <option>Parent or Guardian</option>
+                            <option>Sibling</option>
+                            <option>Spouse</option>
+                            <option>Employer or Colleague</option>
+                            <option>Friend or Relative</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Security</legend>
+
+                <p>
+                    <label>
+                        Password (at least 6 characters):
+                        <input type="password" name="password" minlength="6" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Confirm password:
+                        <input type="password" name="password_confirm"
+                               minlength="6" required>
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the <a href="term-use.html">terms of use</a>
+                    and confirm that my identification information is true
+                    and correct.
+                </label>
+            </p>
+
+            <p><button type="submit">Complete Tenant Registration</button></p>
+        </form>
+
+        <p>
+            Are you a property owner or real estate company?
+            <a href="owner-registration.html">Register as an owner</a>.
+        </p>
+
+        <p>
+            Already have an account?
+            <a href="signin.html">Sign in</a>.
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            &copy; 2026 Ethiopia House Rental |
+            <a href="contact-us.html">Contact us</a> |
+            <a href="owner/faq-terms.html">FAQ and Terms</a>
+        </p>
+    </footer>
+</body>
+</html>

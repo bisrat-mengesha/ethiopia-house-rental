@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Houses - Ethiopia House Rental</title>
+</head>
+<body>
+    <header>
+        <h1>Ethiopia House Rental</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="signin.html">Log In</a> |
+            <a href="register.html">Register</a> |
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Find a House to Rent</h2>
+        <form>
+            <fieldset>
+                <legend>Search and Filter</legend>
+
+                <p>
+                    <label>
+                        Area or city:
+                        <input type="text" name="area" list="ethiopia-locations"
+                               placeholder="Bole, Hawassa, Bahir Dar, Adama">
+                        <datalist id="ethiopia-locations">
+                            <option value="Addis Ababa - Bole">
+                            <option value="Addis Ababa - Kazanchis">
+                            <option value="Addis Ababa - CMC">
+                            <option value="Addis Ababa - Sarbet">
+                            <option value="Addis Ababa - Piassa">
+                            <option value="Addis Ababa - Summit">
+                            <option value="Addis Ababa - Yeka">
+                            <option value="Addis Ababa - Megenagna">
+                            <option value="Hawassa">
+                            <option value="Bahir Dar">
+                            <option value="Adama (Nazret)">
+                            <option value="Dire Dawa">
+                            <option value="Mekelle">
+                            <option value="Gondar">
+                            <option value="Bishoftu (Debre Zeyit)">
+                            <option value="Jimma">
+                            <option value="Jigjiga">
+                            <option value="Dessie">
+                        </datalist>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Maximum price (ETB):
+                        <input type="number" name="maxprice" min="0" step="500">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        House type:
+                        <select name="type">
+                            <option value="">Any type</option>
+                            <option>Room</option>
+                            <option>Apartment</option>
+                            <option>House</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Bedrooms:
+                        <select name="bedrooms">
+                            <option value="">Any</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4 or more</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p><button type="submit">Search Houses</button></p>
+            </fieldset>
+        </form>
+
+        <h2>Recently Added Houses</h2>
+        <ul>
+            <li>
+                <img src="img/house1.jpg" alt="House 1" width="150px" height="100px">
+                <p>Location: Bole, Addis Ababa</p>
+                <p>Type: Apartment</p>
+                <p>Price: 12,000 ETB/month</p>
+                <a href="house-details.html">View Details</a>
+            </li>
+            <li>
+                <img src="img/house2.jpg" alt="House 2" width="150px" height="100px">
+                <p>Location: Mekanisa, Addis Ababa</p>
+                <p>Type: Single Room</p>
+                <p>Price: 25,000 ETB/month</p>
+                <a href="house-details.html">View Details</a>
+            </li>
+            <li>
+                <img src="img/house3.jpg" alt="House 3" width="150px" height="100px">
+                <p>Location: Plassa, Addis Ababa</p>
+                <p>Type: Apartment</p>
+                <p>Price: 60,000 ETB/month</p>
+                <a href="house-details.html">View Details</a>
+            </li>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            &copy; 2026 Ethiopia House Rental |
+            <a href="contact-us.html">Contact Us</a> |
+            <a href="term-use.html">Terms of Use</a>
+        </p>
+    </footer>
+</body>
+</html>
