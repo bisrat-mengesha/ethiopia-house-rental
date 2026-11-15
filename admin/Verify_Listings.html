@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Listings</title>
+</head>
+<body>
+
+    <header>
+        <h1>House Rental Management System</h1>
+        <h2>Verify House Listings</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./Admin_Dashboard.html">Dashboard</a></li>
+            <li><a href="./ManageUsers.html">Manage Users</a></li>
+            <li><a href="./Verify_Listings.html">Verify Listings</a></li>
+            <li><a href="./View_Reports.html">View Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>House Listing Verification</h2>
+
+        <form action="#" method="get">
+            <p>
+                <label for="search">Search Listing:</label>
+                <input type="search" id="search" name="search">
+            </p>
+
+            <p>
+                <label for="status">Listing Status:</label>
+                <select id="status" name="status">
+                    <option value="">All Statuses</option>
+                    <option value="pending">Pending</option>
+                    <option value="approved">Approved</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+            </p>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <h3>House Listings</h3>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Listing ID</th>
+                    <th>Property</th>
+                    <th>Owner</th>
+                    <th>Location</th>
+                    <th>Monthly Rent</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>L001</td>
+                    <td>Two Bedroom House</td>
+                    <td>Abebe Bekele</td>
+                    <td>Haramaya</td>
+                    <td>8,000 ETB</td>
+                    <td>Pending</td>
+                </tr>
+
+                <tr>
+                    <td>L002</td>
+                    <td>One Bedroom Apartment</td>
+                    <td>Fatuma Hassan</td>
+                    <td>Harar</td>
+                    <td>5,500 ETB</td>
+                    <td>Approved</td>
+                </tr>
+
+                <tr>
+                    <td>L003</td>
+                    <td>Three Bedroom House</td>
+                    <td>Dawit Gemechu</td>
+                    <td>Dire Dawa</td>
+                    <td>12,000 ETB</td>
+                    <td>Rejected</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Verification Process</h3>
+        <ol>
+            <li>Review house listing details.</li>
+            <li>Check property information.</li>
+            <li>Review tenant reports, if available.</li>
+            <li>Approve valid listings.</li>
+            <li>Reject invalid listings and provide a reason.</li>
+            <li>Notify the house owner about the decision.</li>
+        </ol>
+
+        <p><a href="./Admin_Dashboard.html">Back to Dashboard</a></p>
+    </main>
+
+</body>
+</html>

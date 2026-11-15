@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports</title>
+</head>
+<body>
+
+    <header>
+        <h1>House Rental Management System</h1>
+        <h2>View Reports</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./Admin_Dashboard.html">Dashboard</a></li>
+            <li><a href="./ManageUsers.html">Manage Users</a></li>
+            <li><a href="./Verify_Listings.html">Verify Listings</a></li>
+            <li><a href="./View_Reports.html">View Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Generate Reports</h2>
+
+        <form action="#" method="get">
+            <p>
+                <label for="report-type">Report Type:</label>
+                <select id="report-type" name="report-type">
+                    <option value="users">Users Report</option>
+                    <option value="listings">Listings Report</option>
+                    <option value="requests">Rental Requests Report</option>
+                    <option value="payments">Payments Report</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="from-date">From Date:</label>
+                <input type="date" id="from-date" name="from-date">
+            </p>
+
+            <p>
+                <label for="to-date">To Date:</label>
+                <input type="date" id="to-date" name="to-date">
+            </p>
+
+            <button type="submit">Generate Report</button>
+        </form>
+
+        <h3>Available Reports</h3>
+
+        <dl>
+            <dt><strong>Users Report</strong></dt>
+            <dd>Displays registered users, roles, and account statuses.</dd>
+
+            <dt><strong>Listings Report</strong></dt>
+            <dd>Displays total listings and their approval statuses.</dd>
+
+            <dt><strong>Rental Requests Report</strong></dt>
+            <dd>Displays rental requests and their statuses.</dd>
+
+            <dt><strong>Payments Report</strong></dt>
+            <dd>Displays payment records and payment totals.</dd>
+        </dl>
+
+        <h3>Report Periods</h3>
+        <ul>
+            <li>Weekly Report</li>
+            <li>Monthly Report</li>
+            <li>Custom Date Range</li>
+        </ul>
+
+        <p><a href="./Admin_Dashboard.html">Back to Dashboard</a></p>
+    </main>
+
+</body>
+</html>
