@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,103 +10,134 @@
 
     <header>
         <h1>House Rental Management System</h1>
-        <h2>Manage Users</h2>
+        <h2>User Management</h2>
+        <p>Administrator Panel</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="./Admin_Dashboard.html">Dashboard</a></li>
-            <li><a href="./ManageUsers.html">Manage Users</a></li>
-            <li><a href="./Verify_Listings.html">Verify Listings</a></li>
-            <li><a href="./View_Reports.html">View Reports</a></li>
+            <li><a href="index.html">Admin Home</a></li>
+            <li><a href="Admin_Dashboard.html">Dashboard</a></li>
+            <li><a href="ManageUsers.html">Manage Users</a></li>
+            <li><a href="Verify_Listings.html">Verify Listings</a></li>
+            <li><a href="View_Reports.html">View Reports</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>User Management</h2>
 
-        <form action="#" method="get">
-            <p>
-                <label for="search">Search User:</label>
-                <input type="search" id="search" name="search">
-            </p>
+        <h2>Manage Registered Users</h2>
+        <p>View and manage tenant and house owner accounts.</p>
 
-            <p>
-                <label for="role">User Role:</label>
-                <select id="role" name="role">
-                    <option value="">All Roles</option>
-                    <option value="tenant">Tenant</option>
-                    <option value="owner">House Owner</option>
-                </select>
-            </p>
+        <section>
+            <h3>Search and Filter Users</h3>
 
-            <p>
-                <label for="status">Account Status:</label>
-                <select id="status" name="status">
-                    <option value="">All Statuses</option>
-                    <option value="active">Active</option>
-                    <option value="suspended">Suspended</option>
-                </select>
-            </p>
+            <form action="#" method="get">
 
-            <button type="submit">Search</button>
-        </form>
+                <p>
+                    <label for="search">Search by Name or User ID:</label>
+                    <input type="search" id="search" name="search">
+                </p>
 
-        <h3>Registered Users</h3>
+                <p>
+                    <label for="role">User Role:</label>
+                    <select id="role" name="role">
+                        <option value="">All Roles</option>
+                        <option value="tenant">Tenant</option>
+                        <option value="owner">House Owner</option>
+                    </select>
+                </p>
 
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>User ID</th>
-                    <th>Full Name</th>
-                    <th>Role</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
+                <p>
+                    <label for="status">Account Status:</label>
+                    <select id="status" name="status">
+                        <option value="">All Statuses</option>
+                        <option value="active">Active</option>
+                        <option value="suspended">Suspended</option>
+                    </select>
+                </p>
 
-            <tbody>
-                <tr>
-                    <td>U001</td>
-                    <td>Abebe Bekele</td>
-                    <td>House Owner</td>
-                    <td>0911000001</td>
-                    <td>abebe@example.com</td>
-                    <td>Active</td>
-                </tr>
+                <button type="submit">Search Users</button>
+                <button type="reset">Clear Filters</button>
 
-                <tr>
-                    <td>U002</td>
-                    <td>Hana Tadesse</td>
-                    <td>Tenant</td>
-                    <td>0911000002</td>
-                    <td>hana@example.com</td>
-                    <td>Active</td>
-                </tr>
+            </form>
+        </section>
 
-                <tr>
-                    <td>U003</td>
-                    <td>Mohammed Ali</td>
-                    <td>Tenant</td>
-                    <td>0911000003</td>
-                    <td>mohammed@example.com</td>
-                    <td>Suspended</td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <h3>Registered Users</h3>
 
-        <h3>Available Actions</h3>
-        <ul>
-            <li>View User Details</li>
-            <li>Suspend User Account</li>
-            <li>Reactivate User Account</li>
-            <li>Reset User Password</li>
-            <li>Delete User Account</li>
-        </ul>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Full Name</th>
+                        <th>Role</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Account Status</th>
+                    </tr>
+                </thead>
 
-        <p><a href="./Admin_Dashboard.html">Back to Dashboard</a></p>
+                <tbody>
+                    <tr>
+                        <td>U001</td>
+                        <td>Abebe Bekele</td>
+                        <td>House Owner</td>
+                        <td>0911000001</td>
+                        <td>abebe@example.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>U002</td>
+                        <td>Hana Tadesse</td>
+                        <td>Tenant</td>
+                        <td>0911000002</td>
+                        <td>hana@example.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>U003</td>
+                        <td>Mohammed Ali</td>
+                        <td>Tenant</td>
+                        <td>0911000003</td>
+                        <td>mohammed@example.com</td>
+                        <td>Suspended</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>User Account Management</h3>
+
+            <ul>
+                <li>View registered user information.</li>
+                <li>Review tenant and house owner accounts.</li>
+                <li>Suspend accounts that violate system rules.</li>
+                <li>Reactivate suspended accounts when appropriate.</li>
+                <li>Identify suspicious user activities.</li>
+                <li>Review user account complaints.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Account Management Guidelines</h3>
+
+            <ol>
+                <li>Review the user's registration information.</li>
+                <li>Check the user's account status.</li>
+                <li>Investigate reported account problems.</li>
+                <li>Take appropriate action according to system rules.</li>
+            </ol>
+        </section>
+
     </main>
+
+    <footer>
+        <p>House Rental Management System - Admin Section</p>
+    </footer>
 
 </body>
 </html>

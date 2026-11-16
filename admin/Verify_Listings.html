@@ -1,104 +1,201 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verify Listings</title>
+    <title>Verify House Listings</title>
 </head>
 <body>
 
     <header>
         <h1>House Rental Management System</h1>
         <h2>Verify House Listings</h2>
+        <p>Administrator Panel</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="./Admin_Dashboard.html">Dashboard</a></li>
-            <li><a href="./ManageUsers.html">Manage Users</a></li>
-            <li><a href="./Verify_Listings.html">Verify Listings</a></li>
-            <li><a href="./View_Reports.html">View Reports</a></li>
+            <li><a href="index.html">Admin Home</a></li>
+            <li><a href="Admin_Dashboard.html">Dashboard</a></li>
+            <li><a href="ManageUsers.html">Manage Users</a></li>
+            <li><a href="Verify_Listings.html">Verify Listings</a></li>
+            <li><a href="View_Reports.html">View Reports</a></li>
         </ul>
     </nav>
 
     <main>
         <h2>House Listing Verification</h2>
+        <p>Review property information and check submitted listings before approval.</p>
 
-        <form action="#" method="get">
-            <p>
-                <label for="search">Search Listing:</label>
-                <input type="search" id="search" name="search">
-            </p>
+        <section>
+            <h3>Search and Filter Listings</h3>
 
-            <p>
-                <label for="status">Listing Status:</label>
-                <select id="status" name="status">
-                    <option value="">All Statuses</option>
-                    <option value="pending">Pending</option>
-                    <option value="approved">Approved</option>
-                    <option value="rejected">Rejected</option>
-                </select>
-            </p>
+            <form action="#" method="get">
+                <p>
+                    <label for="search">Search by Listing ID or Property:</label>
+                    <input type="search" id="search" name="search">
+                </p>
 
-            <button type="submit">Search</button>
-        </form>
+                <p>
+                    <label for="status">Listing Status:</label>
+                    <select id="status" name="status">
+                        <option value="">All Statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                </p>
 
-        <h3>House Listings</h3>
+                <button type="submit">Search Listings</button>
+                <button type="reset">Clear Filters</button>
+            </form>
+        </section>
 
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Listing ID</th>
-                    <th>Property</th>
-                    <th>Owner</th>
-                    <th>Location</th>
-                    <th>Monthly Rent</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
+        <section>
+            <h3>Submitted House Listings</h3>
 
-            <tbody>
-                <tr>
-                    <td>L001</td>
-                    <td>Two Bedroom House</td>
-                    <td>Abebe Bekele</td>
-                    <td>Haramaya</td>
-                    <td>8,000 ETB</td>
-                    <td>Pending</td>
-                </tr>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Listing ID</th>
+                        <th>Property Type</th>
+                        <th>Owner</th>
+                        <th>Location</th>
+                        <th>Monthly Rent</th>
+                        <th>Bedrooms</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
 
-                <tr>
-                    <td>L002</td>
-                    <td>One Bedroom Apartment</td>
-                    <td>Fatuma Hassan</td>
-                    <td>Harar</td>
-                    <td>5,500 ETB</td>
-                    <td>Approved</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>L001</td>
+                        <td>Two Bedroom House</td>
+                        <td>Abebe Bekele</td>
+                        <td>Haramaya</td>
+                        <td>8,000 ETB</td>
+                        <td>2</td>
+                        <td>Pending</td>
+                    </tr>
 
-                <tr>
-                    <td>L003</td>
-                    <td>Three Bedroom House</td>
-                    <td>Dawit Gemechu</td>
-                    <td>Dire Dawa</td>
-                    <td>12,000 ETB</td>
-                    <td>Rejected</td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr>
+                        <td>L002</td>
+                        <td>One Bedroom Apartment</td>
+                        <td>Fatuma Hassan</td>
+                        <td>Harar</td>
+                        <td>5,500 ETB</td>
+                        <td>1</td>
+                        <td>Approved</td>
+                    </tr>
 
-        <h3>Verification Process</h3>
-        <ol>
-            <li>Review house listing details.</li>
-            <li>Check property information.</li>
-            <li>Review tenant reports, if available.</li>
-            <li>Approve valid listings.</li>
-            <li>Reject invalid listings and provide a reason.</li>
-            <li>Notify the house owner about the decision.</li>
-        </ol>
+                    <tr>
+                        <td>L003</td>
+                        <td>Three Bedroom House</td>
+                        <td>Dawit Gemechu</td>
+                        <td>Dire Dawa</td>
+                        <td>12,000 ETB</td>
+                        <td>3</td>
+                        <td>Rejected</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <p><a href="./Admin_Dashboard.html">Back to Dashboard</a></p>
+        <section>
+            <h3>Property Verification Details</h3>
+
+            <ul>
+                <li>Check the property title and description.</li>
+                <li>Verify the house location and address.</li>
+                <li>Review the monthly rental price.</li>
+                <li>Check the number of bedrooms and property type.</li>
+                <li>Review property photos and submitted documents.</li>
+                <li>Confirm the owner's information.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Review and Make a Decision</h3>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="listing-id">Listing ID:</label>
+                    <input type="text" id="listing-id" name="listing_id">
+                </p>
+
+                <p>
+                    <label for="decision">Verification Decision:</label>
+                    <select id="decision" name="decision">
+                        <option value="">Select Decision</option>
+                        <option value="approved">Approve Listing</option>
+                        <option value="rejected">Reject Listing</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="reason">Reason or Admin Comment:</label>
+                    <textarea id="reason" name="reason" rows="4" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Submit Decision</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Reported Houses</h3>
+            <p>Review houses reported by tenants or other users.</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Report ID</th>
+                        <th>Listing ID</th>
+                        <th>Reported By</th>
+                        <th>Report Reason</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>R001</td>
+                        <td>L001</td>
+                        <td>Tenant U002</td>
+                        <td>Incorrect property information</td>
+                        <td>Pending Review</td>
+                    </tr>
+
+                    <tr>
+                        <td>R002</td>
+                        <td>L003</td>
+                        <td>Tenant U004</td>
+                        <td>Suspected fake listing</td>
+                        <td>Under Review</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Verification Guidelines</h3>
+
+            <ol>
+                <li>Review all submitted property information.</li>
+                <li>Check the owner's details and property documents.</li>
+                <li>Identify suspicious or fake listings.</li>
+                <li>Review complaints and reported houses.</li>
+                <li>Approve valid listings.</li>
+                <li>Reject invalid listings and record the reason.</li>
+                <li>Notify the house owner about the decision.</li>
+            </ol>
+        </section>
+
     </main>
+
+    <footer>
+        <p>House Rental Management System - Admin Section</p>
+    </footer>
 
 </body>
 </html>
