@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Reports</title>
+</head>
+<body>
+
+    <header>
+        <h1>House Rental Management System</h1>
+        <h2>System Reports</h2>
+        <p>Administrator Panel</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Admin Home</a></li>
+            <li><a href="Admin_Dashboard.html">Dashboard</a></li>
+            <li><a href="ManageUsers.html">Manage Users</a></li>
+            <li><a href="Verify_Listings.html">Verify Listings</a></li>
+            <li><a href="View_Reports.html">View Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Generate System Reports</h2>
+        <p>View and monitor reports about the activities of the rental management system.</p>
+
+        <section>
+            <h3>Report Selection</h3>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="report-type">Select Report Type:</label>
+                    <select id="report-type" name="report-type">
+                        <option value="">Choose Report</option>
+                        <option value="users">Users Report</option>
+                        <option value="listings">House Listings Report</option>
+                        <option value="requests">Rental Requests Report</option>
+                        <option value="payments">Payments Report</option>
+                        <option value="complaints">Complaints Report</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="from-date">From Date:</label>
+                    <input type="date" id="from-date" name="from-date">
+                </p>
+
+                <p>
+                    <label for="to-date">To Date:</label>
+                    <input type="date" id="to-date" name="to-date">
+                </p>
+
+                <p>
+                    <label for="period">Report Period:</label>
+                    <select id="period" name="period">
+                        <option value="">Select Period</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="custom">Custom Date Range</option>
+                    </select>
+                </p>
+
+                <button type="submit">Generate Report</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h3>Available Reports</h3>
+
+            <dl>
+                <dt><strong>Users Report</strong></dt>
+                <dd>Displays registered tenants, house owners, and account statuses.</dd>
+
+                <dt><strong>House Listings Report</strong></dt>
+                <dd>Displays submitted houses, approved listings, pending listings, and rejected listings.</dd>
+
+                <dt><strong>Rental Requests Report</strong></dt>
+                <dd>Displays rental requests submitted by tenants and their current statuses.</dd>
+
+                <dt><strong>Payments Report</strong></dt>
+                <dd>Displays payment records and payment totals.</dd>
+
+                <dt><strong>Complaints Report</strong></dt>
+                <dd>Displays complaints and reported houses submitted by users.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h3>System Activity Summary</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>User Registration</td>
+                        <td>New users registered in the system.</td>
+                    </tr>
+
+                    <tr>
+                        <td>House Listings</td>
+                        <td>New properties submitted by house owners.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Listing Verification</td>
+                        <td>House listings approved or rejected by administrators.</td>
+                    </tr>
+
+                    <tr>
+                        <td>User Complaints</td>
+                        <td>Complaints and reports submitted by users.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Account Management</td>
+                        <td>User accounts suspended or reactivated.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Report Management Guidelines</h3>
+
+            <ol>
+                <li>Select the report category you want to review.</li>
+                <li>Choose the required date range.</li>
+                <li>Generate the report.</li>
+                <li>Review the report information carefully.</li>
+                <li>Use the information to monitor system activities.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>House Rental Management System - Admin Section</p>
+    </footer>
+
+</body>
+</html>
